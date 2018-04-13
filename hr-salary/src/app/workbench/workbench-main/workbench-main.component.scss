@@ -1,0 +1,39 @@
+.index-box{
+  display: flex;
+  border:1px solid #f2f2f2;
+  justify-content: flex-start;
+  text-align: left;
+  padding:20px 15px;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  margin-top:10px;
+  .box-title{
+    padding-bottom:10px;
+    margin-bottom:20px;
+    //border-bottom:1px solid #ddd;
+  }
+
+  .index-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      cursor: pointer;
+      //flex: 20%;
+      //float: left;
+      border-radius: 5px;
+      border:1px solid #ddd;
+      width:235px;
+      //background-color: #f2f2f2;
+      margin-bottom:20px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      height:72px;
+    }
+    li:hover{
+      border:1px solid rgb(56,173,255);
+    }
+  }
+}
