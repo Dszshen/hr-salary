@@ -1,25 +1,79 @@
 .rn-box
   .rn-table-tools
-    //button.btn.btn-primary(type="button" data-toggle='modal', data-target='#employeeAdd') 添加员工
-    button.btn.btn-primary(type="button") 批量添加
-    button.btn.btn-primary(type="button") 部门调整
-    button.btn.btn-primary(type="button") 职位调整
+    button.btn.btn-primary(type="button" data-toggle='modal', data-target='#employeeAdd') 考勤调整
+    input(type="checkbox")
+    label 迟到
+    input(type="checkbox")
+    label 早退
+    input(type="checkbox")
+    label 旷工
+    input(type="checkbox")
+    label 事假
+    input(type="checkbox")
+    label 病假
+    input(type="checkbox")
+    label 调休
+    input(type="checkbox")
+    label 年假
   table.table.table-bordered
     thead
       tr
+        th 全选
         th 姓名
         th 工号
         th 部门
         th 职位
         th 等级
-        th 办公地点
-        th 入职时间
+        th 请假合计
+        th 迟到合计
+        th 病假合计
+        th 旷工合计
     tbody
       tr
+        td
+          input(type="checkbox")
         td 李四
         td TY008
         td 秩序维护部
         td 班长
         td 二级
-        td V客部落
-        td 2018-08-08
+        td 3小时
+        td 3小时
+        td 3小时
+        td 3天
+      tr
+        td
+          input(type="checkbox")
+        td 李四
+        td TY008
+        td 秩序维护部
+        td 班长
+        td 二级
+        td 3小时
+        td 3小时
+        td 3小时
+        td 3天
+      tr
+        td
+          input(type="checkbox")
+        td 李四
+        td TY008
+        td 秩序维护部
+        td 班长
+        td 二级
+        td 3小时
+        td 3小时
+        td 3小时
+        td 3天
+      tr
+        td
+          input(type="checkbox")
+        td 李四
+        td TY008
+        td 秩序维护部
+        td 班长
+        td 二级
+        td 3小时
+        td 3小时
+        td 3小时
+        td 3天

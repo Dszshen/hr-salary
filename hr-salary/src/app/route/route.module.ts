@@ -9,11 +9,13 @@ import {AttendanceMainComponent} from '../attendance/attendance-main/attendance-
 import {Err500Component} from '../error/err500/err500.component';
 import {Err404Component} from '../error/err404/err404.component';
 import {ReportMainComponent} from '../report/report-main/report-main.component';
+import {EmployeeProfileComponent} from '../employee/employee-profile/employee-profile.component';
 
 const routes: Routes = [
   {path: '', component: WorkbenchMainComponent},
   {path: 'employee', component: EmployeeMainComponent},
   {path: 'employee/add', component: EmployeeAddComponent},
+  {path: 'employee/profile/:id', component: EmployeeProfileComponent},
   {path: 'attendance', component: AttendanceMainComponent},
   {path: 'salary', component: SalaryMainComponent},
   {path: 'report', component: ReportMainComponent},
@@ -31,6 +33,7 @@ const routes: Routes = [
     WorkbenchMainComponent,
     EmployeeMainComponent,
     EmployeeAddComponent,
+    EmployeeProfileComponent,
     AttendanceMainComponent,
     SalaryMainComponent,
     ReportMainComponent,
