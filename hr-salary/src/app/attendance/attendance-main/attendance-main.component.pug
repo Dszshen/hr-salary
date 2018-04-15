@@ -1,6 +1,7 @@
 .rn-box
   .rn-table-tools
-    button.btn.btn-primary(type="button" data-toggle='modal', data-target='#employeeAdd') 考勤调整
+    //button.btn.btn-primary(type="button" data-toggle='modal', data-target='#workingShift') 班次维护
+    a.working-shift-link([routerLink]="['/attendance/workingShift']") 班次维护
     input(type="checkbox")
     label 迟到
     input(type="checkbox")
@@ -18,7 +19,7 @@
   table.table.table-bordered
     thead
       tr
-        th 全选
+        th.th-checkbox 全选
         th 姓名
         th 工号
         th 部门

@@ -1,0 +1,49 @@
+.employee-profile{
+  margin-top:20px;
+  margin-bottom:20px;
+  //border:1px solid #ccc;
+  min-height: 400px;
+  background-color: #fff;
+  padding:30px 50px 80px 50px;
+  .profile-header{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    .name{
+      small.float-right{
+        display: inline-block;
+        font-size:14px;
+        line-height:32px;
+        vertical-align: bottom;
+        strong{
+          margin-right:5px;
+        }
+      }
+    }
+  }
+
+  .profile-content{
+    margin-top:20px;
+    .profile-info-group{
+      label{
+        font-size:16px;
+        color:#000;
+        min-width:113px;
+        font-weight: bold;
+        text-align: right;
+      }
+      span{
+        margin-left:10px;
+        font-size:14px;
+        color:#555;
+      }
+    }
+  }
+
+  .hr-wrap{
+    padding:30px 108px;
+  }
+
+  .salary-detail-link{
+    margin-left:50px;
+  }
+}

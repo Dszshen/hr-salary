@@ -1,0 +1,75 @@
+.rn-box
+  .rn-table-tools
+    button.btn.btn-primary(type="button", data-toggle='modal', data-target='#workingShift') 班次维护
+    button.btn.btn-primary(type='button', data-toggle='modal', data-target='#workingShift') 新增班次
+  table.table.table-bordered
+  table.table.table-bordered
+    thead
+      tr
+        th.th-checkbox 全选
+        th 班次
+        th 时间
+        th 时长
+        th 备注
+    tbody
+      tr
+        td
+          input(type="checkbox")
+        td 早班
+        td 09:00:00~17:00:00
+        td 8小时
+        td 备注
+      tr
+        td
+          input(type="checkbox")
+        td 中班
+        td 11:00:00~21:00:00
+        td 10小时
+        td 备注
+      tr
+        td
+          input(type="checkbox")
+        td 夜班
+        td 21:00:00~次日 07:00:00
+        td 10小时
+        td 备注
+  #workingShift.modal.fade
+    .modal-dialog.modal-lg
+      .modal-content
+        // 模态框头部
+        .modal-header
+          h4.modal-title 新增班次
+          button.close(type='button', data-dismiss='modal') ×
+        // 模态框主体
+        .modal-body
+          form.rn-form
+            .rn-form-group
+              label 班次
+              .rn-form-content
+                input(type='text' placeholder="班次名称")
+            .rn-form-group
+              label 上班时间
+              .rn-form-content
+                input(type='text' placeholder="上班时间")
+            .rn-form-group
+              label 下班时间
+              .rn-form-content
+                input(type='text' placeholder="下班时间")
+            .rn-form-group
+              label 时长
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 允许迟到次数
+              .rn-form-content
+                select
+                  option(value="1" selected) 1次
+                  option(value="2") 2次
+                  option(value="3") 3次
+            .rn-form-group
+              label 备注
+              .rn-form-content
+                textarea(rows="5" placeholder='备注')
+        // 模态框底部
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') 关闭

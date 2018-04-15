@@ -1,28 +1,44 @@
 /*基本信息展示*/
-.box-header{
-  font-size:18px;
-  border-bottom:1px solid #f2f2f2;
-  padding-bottom:10px;
-  margin-bottom:10px;
-  color:#38adff;
-}
+.salary-main{
+  //padding:20px 0;
+  .box-header{
+    font-size:18px;
+    border-bottom:1px solid #f2f2f2;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    color:#38adff;
+  }
 
-.base-info{
-  margin-right:10px;
-}
-
-table{
-  width:auto;
-  thead{
-    th{
-      font-size:14px;
-      padding:5px 10px;
+  .box-title{
+    font-size:16px;
+    a.link{
+      margin-left:20px;
+      font-size:12px;
     }
   }
-  tbody{
-    tr td{
-      font-size:10px;
-      padding:2px 5px;
+
+  .box-content{
+    margin-bottom:25px;
+  }
+
+  .salary-list-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    //flex-direction: column;
+    li{
+      //margin-right: 5%;
+      display: flex;
+      width:30%;
+      height:90px;
+      justify-content: center;
+      border:1px solid #dedede;
+      align-items: center;
+      margin-bottom:20px;
     }
   }
 }
+
+
+
+

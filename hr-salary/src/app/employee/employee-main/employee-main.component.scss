@@ -1,3 +1,43 @@
+.modal-header{
+  background-color: #eceff4 !important;
+  .modal-title{
+    font-size:18px;
+  }
+}
+
+.modal-footer{
+  border-top:none;
+  justify-content: center;
+}
+
 .table-tools{
 
 }
+
+.employee-dept{
+  width:100%;
+  padding:20px 50px;
+  .left-wrap,.right-wrap{
+    width:48%;
+    .title{
+      font-size:16px;
+    }
+    .content{
+      height:420px;
+      border:1px solid #dedede;
+      background-color: #f4f6f8;
+    }
+  }
+
+  .left-wrap{
+    float: left;
+    .content{
+      border-right:1px solid #dedede;
+    }
+  }
+
+  .right-wrap{
+    float: right;
+  }
+}
+

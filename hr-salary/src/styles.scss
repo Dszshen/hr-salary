@@ -25,6 +25,10 @@ table{
   thead{
     th{
       white-space: nowrap;
+      //border-bottom: 1px solid #dee2e6;
+    }
+    .th-checkbox{
+      width:50px;
     }
   }
 }
@@ -72,7 +76,7 @@ table{
       width:100%;
     }
 
-    label,input,textarea,select{
+    label,input,select{
       height: 32px;
       padding: 2px 5px;
       line-height: 28px;
@@ -88,7 +92,7 @@ table{
 
 .box-title{
   font-size:16px;
-  border-left:5px solid #dddddd;
+  border-left:5px solid #38adff;
   padding-left:10px;
   margin-bottom:10px;
 }

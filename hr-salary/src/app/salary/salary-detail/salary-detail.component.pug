@@ -1,0 +1,188 @@
+.rn-box.salary-detail
+  h3.box-header 薪资管理
+  h4.box-title 员工属性
+    //a.link([routerLink]="['']") 编辑
+  .box-content
+    span.base-info 张三
+    span.base-info 巡逻
+  h4.box-title 工资标准
+  .box-content
+    table.table.table-bordered
+      thead
+        tr
+          th 工资标准
+          th 每月实发工资
+          th 试用工资
+          th 计提绩效工资
+          th 基本工资
+      tbody
+        tr
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+  h4.box-title 本月应发工资
+  .box-content
+    table.table.table-bordered
+      thead
+        tr
+          th 本月基本工资
+          th 津贴
+          th 便民奖金
+          th 加班工资
+          th 法定节假日加班工资
+          th 其他应发
+          th 考勤/核扣款
+          th 经营负向绩效扣款
+          th 应发合计
+      tbody
+        tr
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+  h4.box-title 扣款
+  .box-content
+    table.table.table-bordered
+      thead
+        tr
+          th 个人所得税
+          th 养老保险
+          th 失业保险
+          th 住房公积金
+          th 手机超标
+          th 其他扣款
+          th 费用超支扣款
+          th 扣款小计
+      tbody
+        tr
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+          td 20000.00
+  h4.box-title 实发工资
+  .box-content
+    | ¥ 20000.00
+    label(style="margin-left:20px;font-size:14px;margin-right:5px;")
+      strong 大写:
+    span 两万圆整
+  h4.box-title 代扣伙食费
+  .box-content
+    table.table.table-bordered
+      thead
+        tr
+          th 午餐补贴
+          th 晚餐补贴
+      tbody
+        tr
+          td 20000.00
+          td 20000.00
+  h4.box-title 领款金额
+  .box-content
+    | ¥ 20000.00
+    label(style="margin-left:20px;font-size:14px;margin-right:5px;")
+      strong 大写:
+    span 两万圆整
+  h4.box-title 备注
+  .box-content
+    | 备注备注备注备注备注备注备注备注备注备注备注备注
+  .salary-problem
+    button.btn.btn-danger.salary-problem-btn(type="button", data-toggle='modal', data-target='#salaryProblem') 薪资有误,钱少了怎么办？提出疑问
+    #salaryProblem.modal.fade
+      .modal-dialog.modal-lg
+        .modal-content
+          // 模态框头部
+          .modal-header
+            h4.modal-title 薪资问题描述
+            button.close(type='button', data-dismiss='modal') ×
+          // 模态框主体
+          .modal-body
+            form.rn-form
+              .rn-form-group
+                textarea.salary-problem-desc(rows="8" placeholder="请输入您对薪资的疑问")
+          // 模态框底部
+          .modal-footer
+            button.btn.btn-primary(type='button', data-dismiss='modal') 提交
+            button.btn.btn-secondary(type='button', data-dismiss='modal') 关闭
+//.rn-box.overflow-x-box
+  table.table.table-bordered
+    thead
+      tr
+        th 姓名
+        th 岗位名称
+        th 工资标准
+        th 每月实发工资
+        th 试用工资
+        th 计提绩效工资
+        th 基本工资
+        th 出勤天数
+        th 本月基本工资
+        th 津贴
+        th 便民奖金
+        th 加班工资
+        th 法定节假日加班工资
+        th 其他应发
+        th 考勤/核扣款
+        th 经营负向绩效扣款
+        th 应发合计
+        th 个人所得税
+        th 养老保险
+        th 失业保险
+        th 住房公积金
+        th 手机超标
+        th 其他扣款
+        th 费用超支扣款
+        th 扣款小计
+        th 实发工资
+        th 午餐补贴
+        th 晚餐补贴
+        th 领款金额
+        th 收款人签章
+        th 备注
+    tbody
+      tr
+        td 姓名
+        td 岗位名称
+        td 工资标准
+        td 每月实发工资
+        td 试用工资
+        td 计提绩效工资
+        td 基本工资
+        td 出勤天数
+        td 本月基本工资
+        td 津贴
+        td 便民奖金
+        td 加班工资
+        td 法定节假日加班工资
+        td 其他应发
+        td 考勤/核扣款
+        td 经营负向绩效扣款
+        td 应发合计
+        td 个人所得税
+        td 养老保险
+        td 失业保险
+        td 住房公积金
+        td 手机超标
+        td 其他扣款
+        td 费用超支扣款
+        td 扣款小计
+        td 实发工资
+        td 午餐补贴
+        td 晚餐补贴
+        td 领款金额
+        td 收款人签章
+        td 备注
+
+
+
+

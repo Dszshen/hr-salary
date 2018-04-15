@@ -2,11 +2,12 @@
   .rn-table-tools
     button.btn.btn-primary(type='button', data-toggle='modal', data-target='#employeeAdd') 添加员工
     button.btn.btn-primary(type='button') 批量添加
-    button.btn.btn-primary(type='button') 部门调整
+    button.btn.btn-primary(type='button' , data-toggle='modal', data-target='#employeeDept') 部门调整
     button.btn.btn-primary(type='button') 职位调整
   table.table.table-bordered
     thead
       tr
+        th.th-checkbox 选择
         th 姓名
         th 工号
         th 部门
@@ -17,6 +18,8 @@
     tbody
       tr
         td
+          input(type="checkbox")
+        td
           a([routerLink]="['/employee/profile',1]", [queryParams]='{manager:true}') 张三
         td TY008
         td 秩序维护部
@@ -25,6 +28,8 @@
         td V客部落
         td 2018-08-08
       tr
+        td
+          input(type="checkbox")
         td
           a([routerLink]="['/employee/profile',2]") 李四
         td TY008
@@ -74,3 +79,23 @@
         // 模态框底部
         .modal-footer
           button.btn.btn-secondary(type='button', data-dismiss='modal') 关闭
+  #employeeDept.modal.fade
+    .modal-dialog.modal-lg
+      .modal-content
+        // 模态框头部
+        .modal-header
+          h4.modal-title 部门调整
+          button.close(type='button', data-dismiss='modal') ×
+        // 模态框主体
+        .modal-body.employee-dept.clearfix
+          .left-wrap
+            h4.title 选择:
+            .content
+          .right-wrap
+            h4.title 已选:
+            .content
+
+        // 模态框底部
+        .modal-footer
+          button.btn.btn-primary(type='button', data-dismiss='modal') 确定
+          button.btn.btn-outline-dark(type='button', data-dismiss='modal') 取消

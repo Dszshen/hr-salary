@@ -1,0 +1,56 @@
+.rn-box.salary-standard
+  .card
+    .card-header
+      h4.card-title 基本工资配置
+    .card-body.clearfix
+      .setting-left-wrap
+        .title 基本工资设置
+        .content
+          form.form.rn-form
+            .rn-form-group
+              label 项目组
+              .rn-form-content
+                select
+                  option(selected value="1") 金蓝湾
+                  option(value="2") 动力城
+                  option(value="3") 青年国际
+            .rn-form-group
+              label 部门
+              .rn-form-content
+                select
+                  option(selected value="1") 总经办
+                  option(value="2") 客服部
+                  option(value="3") 秩序维护部
+            .rn-form-group
+              label 职位
+              .rn-form-content
+                select
+                  option(selected value="1") 总经理
+                  option(value="2") 项目经理
+                  option(value="3") 部门经理
+                  option(value="4") 班长
+            .rn-form-group
+              label 等级
+              .rn-form-content
+                select
+                  option(selected value="1") 一级
+                  option(value="2") 二级
+                  option(value="3") 三级
+            .rn-form-group
+              label 基本工资
+              .rn-form-content
+                input(type="text" placeholder="请填写金额")
+            .rn-form-group
+              label 试用期
+              .rn-form-content
+                select
+                  option(selected value="1") 80%
+                  option(value="2") 90%
+                  option(value="3") 100%
+      .preview-right-wrap
+        .title 配置信息预览
+        .content
+
+    .card-footer
+      button.btn.btn-primary.save-btn 保存
+      button.btn.btn-secondary.cancel-btn 取消
