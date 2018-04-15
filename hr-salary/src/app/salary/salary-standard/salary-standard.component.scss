@@ -1,14 +1,15 @@
 .salary-standard{
-  .setting-left-wrap{
+  margin-bottom:30px;
+  .setting-box-wrap{
     float: left;
   }
 
   .preview-right-wrap{
-    float: right;
+    //float: right;
   }
 
-  .setting-left-wrap,.preview-right-wrap{
-    width:48%;
+  .setting-box-wrap,.preview-box-wrap{
+    //width:33%;
     .title{
       font-size:16px;
       padding:10px 0;
@@ -26,6 +27,42 @@
         }
       }
     }
+  }
+
+  .setting-box-wrap{
+    width:24%;
+    margin-right:5px;
+  }
+
+  .preview-box-wrap{
+    width:100%;
+  }
+
+  .filter-condition-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    .condition-group{
+      width:200px;
+      margin-bottom:10px;
+      label{
+        padding-right:5px;
+        text-align: right;
+        width:60px;
+      }
+
+      input,select{
+        height: 26px;
+        width:138px;
+        padding: 2px 5px;
+        line-height: 20px;
+      }
+    }
+  }
+  .filter-condition-content{
+
+  }
+  .filter-condition-desc{
+
   }
 
   .save-btn{
