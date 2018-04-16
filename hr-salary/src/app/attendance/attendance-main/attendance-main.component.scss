@@ -10,6 +10,11 @@
     margin-left:5px;
   }
 
+  label.lab-desc{
+    margin-right:5px;
+    margin-left:5px;
+  }
+
   input[type='checkbox'],label{
     display: inline-block;
     vertical-align: middle;
@@ -21,6 +26,11 @@
     line-height: 32px;
     vertical-align: middle;
     font-size:16px;
+  }
+
+  input,select{
+    height:28px;
+    padding:2px 5px;
   }
 }
 

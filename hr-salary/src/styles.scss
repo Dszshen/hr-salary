@@ -56,9 +56,17 @@ table{
   }
 }
 
+button.btn{
+  font-size:12px;
+}
+
+.modal-header {
+  background-color: #eceff4 !important;
+}
+
 .rn-form{
   .rn-form-group{
-    margin-bottom:20px;
+    margin-bottom:5px;
     label{
       float: left;
       width:20%;

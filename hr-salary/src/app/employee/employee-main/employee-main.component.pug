@@ -4,6 +4,7 @@
     button.btn.btn-primary(type='button') 批量添加
     button.btn.btn-primary(type='button' , data-toggle='modal', data-target='#employeeDept') 部门调整
     button.btn.btn-primary(type='button') 职位调整
+    button.btn.btn-danger(type='button') 离职
   table.table.table-bordered
     thead
       tr
@@ -79,6 +80,7 @@
         // 模态框底部
         .modal-footer
           button.btn.btn-secondary(type='button', data-dismiss='modal') 关闭
+  router-outlet
   #employeeDept.modal.fade
     .modal-dialog.modal-lg
       .modal-content

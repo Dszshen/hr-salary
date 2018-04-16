@@ -22,7 +22,7 @@
       min-height:400px;
       .form{
         label{
-          width:80px;
+          width:84px;
           margin-right:5px;
         }
       }
@@ -30,8 +30,17 @@
   }
 
   .setting-box-wrap{
-    width:24%;
+    width:19%;
     margin-right:5px;
+    //label{
+    //  width:84px;
+    //}
+    .rn-form-content{
+      width:204px;
+    }
+    input,select,textarea{
+      //width:100px;
+    }
   }
 
   .preview-box-wrap{

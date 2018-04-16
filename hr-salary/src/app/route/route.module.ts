@@ -15,10 +15,14 @@ import {SalaryDetailComponent} from '../salary/salary-detail/salary-detail.compo
 import {SalaryStandardComponent} from '../salary/salary-standard/salary-standard.component';
 
 const routes: Routes = [
-  {path: '', component: WorkbenchMainComponent},
-  {path: 'employee', component: EmployeeMainComponent},
-  {path: 'employee/add', component: EmployeeAddComponent},
-  {path: 'employee/profile/:id', component: EmployeeProfileComponent},
+  {path: '', redirectTo:'/workbench',pathMatch:'full'},//重定向路由
+  {path: 'workbench', component: WorkbenchMainComponent},
+  {path: 'employee', component: EmployeeMainComponent,children:[
+    {path: 'add', component: EmployeeAddComponent},
+    {path: 'profile/:id', component: EmployeeProfileComponent}
+  ]},
+  /*{path: 'employee/add', component: EmployeeAddComponent},
+  {path: 'employee/profile/:id', component: EmployeeProfileComponent},*/
   {path: 'attendance', component: AttendanceMainComponent},
   {path: 'attendance/workingShift', component: WorkingShiftComponent},
   {path: 'salary', component: SalaryMainComponent},

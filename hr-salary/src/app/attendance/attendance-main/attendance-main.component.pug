@@ -1,7 +1,13 @@
 .rn-box
   .rn-table-tools
-    //button.btn.btn-primary(type="button" data-toggle='modal', data-target='#workingShift') 班次维护
-    a.working-shift-link([routerLink]="['/attendance/workingShift']") 班次维护
+    button.working-shift-link(type="button", (click)="workingShift();") 班次维护
+    button.btn.btn-primary(type="button" data-toggle='modal', data-target='#workingShift') 考勤调整
+    label.lab-desc 出勤周期
+    select
+      option(selected value="1") 周
+      option(selected value="1") 月
+    label.lab-desc(style="margin-left:20px;") 选择日期
+    input(type="text" placeholder="选择日期" style="margin-right:20px;")
     input(type="checkbox")
     label 迟到
     input(type="checkbox")
@@ -16,6 +22,7 @@
     label 调休
     input(type="checkbox")
     label 年假
+    hr
   table.table.table-bordered
     thead
       tr
@@ -34,7 +41,8 @@
       tr
         td
           input(type="checkbox")
-        td 李四
+        td
+          a([routerLink]="['/employee/profile',1]", [queryParams]='{manager:true}') 张三
         td TY008
         td 秩序维护部
         td 班长
@@ -47,7 +55,8 @@
       tr
         td
           input(type="checkbox")
-        td 李四
+        td
+          a([routerLink]="['/employee/profile',1]", [queryParams]='{manager:true}') 张三
         td TY008
         td 秩序维护部
         td 班长
@@ -60,7 +69,8 @@
       tr
         td
           input(type="checkbox")
-        td 李四
+        td
+          a([routerLink]="['/employee/profile',1]", [queryParams]='{manager:true}') 张三
         td TY008
         td 秩序维护部
         td 班长
@@ -73,7 +83,8 @@
       tr
         td
           input(type="checkbox")
-        td 李四
+        td
+          a([routerLink]="['/employee/profile',1]", [queryParams]='{manager:true}') 张三
         td TY008
         td 秩序维护部
         td 班长
@@ -83,3 +94,45 @@
         td 3小时
         td 3天
         td 3天
+  #workingShift.modal.fade
+    .modal-dialog.modal-lg
+      .modal-content
+        // 模态框头部
+        .modal-header
+          h4.modal-title 考勤调整
+          button.close(type='button', data-dismiss='modal') ×
+        // 模态框主体
+        .modal-body
+          form.rn-form
+            .rn-form-group
+              label 姓名
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 部门
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 职位
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 等级
+              .rn-form-content
+                select
+            .rn-form-group
+              label 邮箱
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 办公地点
+              .rn-form-content
+                input(type='text')
+            .rn-form-group
+              label 入职时间
+              .rn-form-content
+                input(type='text', placeholder='入职时间')
+        // 模态框底部
+        .modal-footer
+          button.btn.btn-primary(type='button', data-dismiss='modal') 提交
+          button.btn.btn-secondary(type='button', data-dismiss='modal') 关闭
