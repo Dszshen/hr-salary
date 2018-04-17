@@ -10,28 +10,6 @@ body{
   background-color: #dddddd;
 }
 
-a:focus,a:active,button:focus,button:active{
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-ul{
-  list-style: none;
-  padding:0;
-  margin:0;
-}
-
-table{
-  thead{
-    th{
-      white-space: nowrap;
-      //border-bottom: 1px solid #dee2e6;
-    }
-    .th-checkbox{
-      width:50px;
-    }
-  }
-}
 
 .rn-box{
   display: flex;
@@ -54,14 +32,6 @@ table{
   button{
     margin-right:10px;
   }
-}
-
-button.btn{
-  font-size:12px;
-}
-
-.modal-header {
-  background-color: #eceff4 !important;
 }
 
 .rn-form{

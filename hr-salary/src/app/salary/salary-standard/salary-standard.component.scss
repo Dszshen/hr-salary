@@ -1,21 +1,39 @@
 .salary-standard{
   margin-bottom:30px;
+
   .setting-box-wrap{
+    //display: flex;
+    width:100%;
+    //flex-wrap: wrap;
+  }
+
+  .setting-box{
+    width:19%;
+    margin-right:15px;
     float: left;
+    min-width:348px;
+    .rn-form-content{
+      width:204px;
+    }
+    input,select,textarea{
+      //width:100px;
+    }
   }
 
-  .preview-right-wrap{
-    //float: right;
+  .preview-box-wrap{
+    width:100%;
+    margin-top:20px;
   }
 
-  .setting-box-wrap,.preview-box-wrap{
+
+  .setting-box,.preview-box-wrap{
     //width:33%;
     .title{
       font-size:16px;
       padding:10px 0;
     }
     .content{
-      padding:15px 20px;
+      padding:15px;
       border:1px solid #ededed;
       background-color: #f4f6f8;
       width:100%;
@@ -27,24 +45,6 @@
         }
       }
     }
-  }
-
-  .setting-box-wrap{
-    width:19%;
-    margin-right:5px;
-    //label{
-    //  width:84px;
-    //}
-    .rn-form-content{
-      width:204px;
-    }
-    input,select,textarea{
-      //width:100px;
-    }
-  }
-
-  .preview-box-wrap{
-    width:100%;
   }
 
   .filter-condition-wrap{
@@ -68,7 +68,11 @@
     }
   }
   .filter-condition-content{
-
+    table{
+      th{
+        padding:5px 10px;
+      }
+    }
   }
   .filter-condition-desc{
 

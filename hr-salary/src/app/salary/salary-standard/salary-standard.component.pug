@@ -1,10 +1,10 @@
 .rn-box.salary-standard
   .card
     .card-header
-      h4.card-title 基本工资配置
+      h4.card-title 工资参数配置
     .card-body
-      .clearfix
-        .setting-box-wrap
+      .setting-box-wrap.clearfix
+        .setting-box
           .title 基本工资设置
           .content
             form.form.rn-form
@@ -68,7 +68,7 @@
                 label 备注
                 .rn-form-content
                   textarea(rows=5)
-        .setting-box-wrap
+        .setting-box
           .title 绩效设置
           .content
             form.form.rn-form
@@ -80,7 +80,7 @@
                 label 经营负向绩效
                 .rn-form-content
                   input(type="text")
-        .setting-box-wrap
+        .setting-box
           .title 保险公积金
           .content
             form.form.rn-form
@@ -112,7 +112,7 @@
                 label 公积金
                 .rn-form-content
                   input(type="text")
-        .setting-box-wrap
+        .setting-box
           .title 补贴设置
           .content
             form.form.rn-form
@@ -128,7 +128,7 @@
                 label 晚餐补贴
                 .rn-form-content
                   input(type="text")
-        .setting-box-wrap
+        .setting-box
           .title 扣款设置
           .content
             form.form.rn-form
@@ -190,7 +190,75 @@
           hr
           .filter-condition-content
             h6 工资示例：
-            table.table.table-bordered
+            .overflow-x-box
+              table.table.table-bordered
+                thead
+                  tr
+                    th 姓名
+                    th 岗位名称
+                    th 工资标准
+                    th 每月实发工资
+                    th 试用工资
+                    th 计提绩效工资
+                    th 基本工资
+                    th 出勤天数
+                    th 本月基本工资
+                    th 津贴
+                    th 便民奖金
+                    th 加班工资
+                    th 法定节假日加班工资
+                    th 其他应发
+                    th 考勤/核扣款
+                    th 经营负向绩效扣款
+                    th 应发合计
+                    th 个人所得税
+                    th 养老保险
+                    th 失业保险
+                    th 住房公积金
+                    th 手机超标
+                    th 其他扣款
+                    th 费用超支扣款
+                    th 扣款小计
+                    th 实发工资
+                    th 午餐补贴
+                    th 晚餐补贴
+                    th 领款金额
+                    th 收款人签章
+                    th 备注
+                tbody
+                  tr
+                    td 张三
+                    td 秩序维护
+                    td 2000
+                    td 3000
+                    td 2400
+                    td 1200
+                    td 1200
+                    td 21.5
+                    td 1200
+                    td 0
+                    td 0
+                    td 0
+                    td 0
+                    td 0
+                    td 0
+                    td -200.00
+                    td 2600
+                    td 0
+                    td 100
+                    td 100
+                    td 100
+                    td 0
+                    td 0
+                    td 0
+                    td 0
+                    td 2800
+                    td 0
+                    td 0
+                    td 2800
+                    td 0
+                    td 备注
+            //table.table.table-bordered
               thead
                 tr
                   th 基本工资
