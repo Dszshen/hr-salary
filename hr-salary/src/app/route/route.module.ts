@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {CommonModule} from "@angular/common";
 import {Routes , RouterModule } from '@angular/router';
 
 import {WorkbenchMainComponent} from '../workbench/workbench-main/workbench-main.component';
@@ -13,6 +14,7 @@ import {EmployeeProfileComponent} from '../employee/employee-profile/employee-pr
 import {WorkingShiftComponent} from '../attendance/working-shift/working-shift.component';
 import {SalaryDetailComponent} from '../salary/salary-detail/salary-detail.component';
 import {SalaryStandardComponent} from '../salary/salary-standard/salary-standard.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo:'/workbench',pathMatch:'full'},//重定向路由
@@ -36,6 +38,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    CommonModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],

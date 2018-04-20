@@ -8,8 +8,8 @@ import {RouteModule} from './route/route.module';
 
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './templates/header/header.component';
-
-
+import {LoggerService} from "./services/logger.service";
+import {EmployeeService} from "./services/employee.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import {HeaderComponent} from './templates/header/header.component';
     BrowserModule,
     MaterialModule
   ],
-  providers: [],
+  providers:[EmployeeService,LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
