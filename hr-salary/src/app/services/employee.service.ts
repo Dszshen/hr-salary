@@ -6,7 +6,7 @@ import {LoggerService} from "./logger.service";
 export class EmployeeService implements UserService{
 
   constructor(
-    private logger:LoggerService
+    public logger:LoggerService
   ) { }
 
   getUsers():User[]{

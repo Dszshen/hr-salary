@@ -6,14 +6,25 @@ import {LoggerService} from "../../services/logger.service";
 @Component({
   selector: 'app-employee-main',
   templateUrl: './employee-main.component.pug',
-  styleUrls: ['./employee-main.component.scss'],
-  providers:[{
+  styleUrls: ['./employee-main.component.scss']
+/*  providers:[{
     provide:UserService,useClass:EmployeeService
-  }]
+  }]*/
 })
 export class EmployeeMainComponent implements OnInit {
 
   users:User[];
+  colspanSize:number = 9;
+  spanColor:string;
+  divClass:any = {
+    "red-color":false
+  };
+  styleStr:boolean = false;
+  divStyle:any = {
+    'fontSize':'14px'
+  };
+
+  ngModelValue:string;
 
   constructor(
     private userService:UserService
@@ -21,5 +32,19 @@ export class EmployeeMainComponent implements OnInit {
 
   ngOnInit() {
     this.users=this.userService.getUsers();
+    setTimeout(()=>{
+      this.spanColor = 'red-color';
+      this.divClass = {
+        "red-color":true
+      };
+      this.styleStr=true;
+      this.divStyle = {
+        'fontSize':'20px'
+      };
+    },2000);
+
+    /*setInterval(()=>{
+      this.ngModelValue = "aaaa";
+    },2000);*/
   }
 }

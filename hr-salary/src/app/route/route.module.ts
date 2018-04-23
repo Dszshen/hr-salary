@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {Routes , RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {WorkbenchMainComponent} from '../workbench/workbench-main/workbench-main.component';
 import {EmployeeMainComponent} from '../employee/employee-main/employee-main.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule,
     RouterModule.forRoot(routes)
   ],
