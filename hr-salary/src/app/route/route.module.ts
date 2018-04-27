@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {Routes , RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {PipeModule} from '../pipes/pipe/pipe.module';
 
 import {WorkbenchMainComponent} from '../workbench/workbench-main/workbench-main.component';
 import {EmployeeMainComponent} from '../employee/employee-main/employee-main.component';
@@ -15,6 +16,14 @@ import {EmployeeProfileComponent} from '../employee/employee-profile/employee-pr
 import {WorkingShiftComponent} from '../attendance/working-shift/working-shift.component';
 import {SalaryDetailComponent} from '../salary/salary-detail/salary-detail.component';
 import {SalaryStandardComponent} from '../salary/salary-standard/salary-standard.component';
+
+//demos
+//import {DemosModule} from "../demos/demos/demos.module";
+import {DemosComponent} from "../demos/components/demos/demos.component";
+import {InputComponent} from "../demos/components/input/input.component";
+import {OutputComponent} from "../demos/components/output/output.component";
+import {OrderComponent} from "../demos/components/order/order.component";
+import {ProductInfoComponent} from "../demos/components/product-info/product-info.component";
 
 
 const routes: Routes = [
@@ -32,6 +41,7 @@ const routes: Routes = [
   {path: 'salary/detail', component: SalaryDetailComponent},
   {path: 'salary/standard', component: SalaryStandardComponent},
   {path: 'report', component: ReportMainComponent},
+  {path: 'demos', component: DemosComponent},
   {path: 'err404', component: Err404Component},
   {path: 'err500', component: Err500Component},
   {path: '**', pathMatch: 'full', redirectTo: 'err404'}
@@ -40,7 +50,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     FormsModule,
+    ReactiveFormsModule,
     CommonModule,
+    PipeModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
@@ -56,7 +68,12 @@ const routes: Routes = [
     SalaryStandardComponent,
     ReportMainComponent,
     Err404Component,
-    Err500Component
+    Err500Component,
+    DemosComponent,
+    InputComponent,
+    OutputComponent,
+    OrderComponent,
+    ProductInfoComponent
   ]
 })
 export class RouteModule { }

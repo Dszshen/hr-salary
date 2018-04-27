@@ -1,0 +1,13 @@
+<div>
+  <h3>DEMO 输入属性实例</h3>
+  <input type="text" [(ngModel)] = "stockCode">
+</div>
+<app-input [amount]="500" [stockCode]="stockCode"></app-input>
+<app-output (lastPrice)="getProductInfo($event);"></app-output>
+<p>
+  在外部拿到输出的数据->>>价格是：{{product.price | number:'2.2-2'}}，代码是：{{product.stockCode}}
+</p>
+
+<hr>
+<app-product-info (buy) = "buyProduct($event);"></app-product-info>
+<app-order [productInfo] = "productInfo"></app-order>

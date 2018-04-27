@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {User, UserService} from "../../services/user.service";
 import {EmployeeService} from "../../services/employee.service";
 import {LoggerService} from "../../services/logger.service";
+import {FormControl} from "@angular/forms";
+import {Observable} from "rxjs/Observable";
+import "rxjs/Rx";
 
 @Component({
   selector: 'app-employee-main',
@@ -24,11 +27,19 @@ export class EmployeeMainComponent implements OnInit {
     'fontSize':'14px'
   };
 
+  birthday:string = 'aaaa';
+
   ngModelValue:string;
+
+  searchKey:FormControl = new FormControl();
 
   constructor(
     private userService:UserService
-  ) { }
+  ) {
+    this.searchKey.valueChanges
+      .debounceTime(500)
+      .subscribe(inputValue => this.getInputValue(inputValue));
+  }
 
   ngOnInit() {
     this.users=this.userService.getUsers();
@@ -47,4 +58,8 @@ export class EmployeeMainComponent implements OnInit {
       this.ngModelValue = "aaaa";
     },2000);*/
   }
+
+  getInputValue(val){
+    console.log(val);
+  };
 }

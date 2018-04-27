@@ -40,6 +40,8 @@
           div([style.color]="styleStr?'red':'blue'") styleStr
           div([ngStyle]="divStyle") divStyle
           div {{ngModelValue}}
+          div {{birthday | birthday}}
+          input([formControl]='searchKey')
       tr
         td([attr.colspan]="colspanSize")
           input([attr.value]='colspanSize')
